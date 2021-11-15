@@ -10,7 +10,7 @@ export function MyDropzone({ userProfileId }: DropzoneProps) {
     formData.append("file", file);
 
     api
-      .post(`/api/v1/user-profile/${userProfileId}/image/upload`, formData, {
+      .post(`/user-profile/${userProfileId}/image/upload`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
